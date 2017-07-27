@@ -21,7 +21,7 @@ $(function(){
         addNewNote: function(noteStr) {
             model.add({
                 content: noteStr,
-                date: new Date()
+                date: new Date().toString()
             });
             view.render();
         },
